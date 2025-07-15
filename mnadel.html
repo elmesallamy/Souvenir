@@ -16,14 +16,14 @@
         body {
             font-family: Arial, sans-serif;
             margin-top: 100px;
-            background-color: #f5f5f5;
+            
         }
 
         header {
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: #ffffff;
+            background-color:  rgb(42, 57, 85);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             z-index: 999;
             padding: 10px 20px;
@@ -31,17 +31,26 @@
 
             header a {
                 text-decoration: none;
-                color: #333;
+                color:  rgba(150, 210, 210, 0.918);
                 font-weight: bold;
                 font-size: 20px;
             }
+             header a:hover{
+                 color:  rgba(150, 210, 210, 0.918);
+                 transform: scale(1.05); 
+                 transition: .5s all;
+                 text-decoration: none;
+             }
 
         h1 {
             text-align: center;
             margin-bottom: 30px;
-            color: #333;
-        }
-
+            font-size: xx-large;
+            font-style: italic;
+            font-weight: 1000;
+            text-shadow: 0 0 .5px #fdf6f6, 0 0 2px #000000;
+            color: rgb(42, 57, 85);
+            }
         .media-gallery {
             display: flex;
             flex-wrap: wrap;
@@ -58,16 +67,20 @@
             }
 
         .back-link {
+            
             display: block;
             text-align: center;
             margin-top: 30px;
             font-size: 18px;
-            color: #007bff;
+            color:  rgb(42, 57, 85);
             text-decoration: none;
         }
 
             .back-link:hover {
-                text-decoration: underline;
+                 transform: scale(1.05); 
+                 transition: .5s all;
+                color:  rgb(42, 57, 85);
+                text-decoration: none;
             }
     </style>
 </head>
@@ -78,7 +91,7 @@
     </header>
 
     <main class="product-section">
-        <h1>كل صور قسم المناديل</h1>
+        <h1>جميع صور  المناديل</h1>
         <div class="media-gallery">
             <img id="image" src="mnadel/1.jpg" alt="مناديل 1" onclick="openPopup(this.src)">
             <img id="image" src="mnadel/2.jpg" alt="مناديل 2" onclick="openPopup(this.src)">
