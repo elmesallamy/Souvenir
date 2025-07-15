@@ -3,7 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: cursive;
+    
     box-sizing: border-box;
 
 }
@@ -39,14 +40,34 @@ header {
     flex-wrap: wrap;
 }
 
-
+#topitem{
+    font-size: xx-large;
+    font-style: italic;
+    
+    font-weight: 1000;
+    text-shadow: 0 0 .5px #fdf6f6, 0 0 2px #000000;
+    color: rgb(42, 57, 85);
+}
 #topname {
     font-size: xx-large;
     font-style: italic;
     margin-right: 25px;
     font-weight: 1000;
     text-decoration: none;
+    text-shadow: 0 0 3px #fdf6f6, 0 0 8px #000000;
     color: rgba(150, 210, 210, 0.918);
+    animation-name: topname;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate-reverse;
+   
+}
+
+@keyframes topname {
+  0%    {color: rgba(150, 210, 210, 0.918);}
+  25%   {color: rgb(226, 130, 151);}
+  50%   {color: rgb(101, 197, 157);}
+  100%  {color: rgb(163, 116, 201);}
 }
 #social a {
     margin: 0 5px;
@@ -100,7 +121,20 @@ nav {
     padding-bottom: 180px;
     box-shadow: 5px 10px 8px cadetblue;
     scroll-margin-top: 140px;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeZoom 0.6s ease forwards;
+    
 }
+
+#aboutimg {
+ opacity: 0;
+    transform: scale(0.9);
+    animation: fadeZoom 0.6s ease forwards;
+}
+
+
+
 ul#list {
     list-style: none;
     padding: 20px;
@@ -110,7 +144,7 @@ ul#list {
 
     ul#list li {
         margin-bottom: 60px;
-        background-color: #fff;
+        background-color: whitesmoke  ;
         padding: 20px;
         border-radius: 12px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -118,8 +152,6 @@ ul#list {
         align-items: center;
         text-align:center;
     }
-
-
 
 .media-gallery {
     display: flex;
@@ -138,14 +170,23 @@ ul#list {
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    opacity: 0;
+    
+    animation: fadeZoom 3.0s ease forwards;
 }
-
 #image:hover {
     transform: scale(1.05); 
     transition: .5s all;
 
 
 }
+@keyframes fadeZoom {
+  to {
+    opacity: 1;
+    
+  }
+}
+
 
 
 #main {
@@ -172,7 +213,7 @@ ul#list {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color:  rgb(42, 57, 85);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -180,10 +221,14 @@ ul#list {
 }
 
     .view-more-btn:hover {
-        background-color: #0056b3;
+        color: white;
+        background-color: #476c94;
     }
 .product-section {
     scroll-margin-top: 140px;
+    
+     
+    
 }
 #popup-container {
     display: none;

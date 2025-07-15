@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
     
     <link rel="icon" type="image/png" href="image/favicon.png">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 <script src="bootstrap/js/bootstrap.min.js"> </script>
@@ -24,8 +24,10 @@
 
     <header>
         <div id="head">
-            <div> <a href="#head" id="topname">Souvenirs.0_0</a></div>
-          
+            <span id="topname" >
+            <i id="s">Sou</i>ven<i id="i">irs.0_0</i>
+            </span>
+
             <nav>
                 <button class="menu-toggle " onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
                 <ul id="items">
@@ -50,27 +52,27 @@
     </header>
 
     <ul id="list">
-        <li id="about" class="product-section" >
+        <li id="about" class="" >
             <div id="main">
-                <div><i id="s">Sou</i>ven<i id="i">irs.0_0</i></div>
+                <div id="top"><i id="s">Sou</i>ven<i id="i">irs.0_0</i></div>
                 <div id="main2">هدفها انها تقدر تشاركك بحاجه تكون جزء من فرحتك وتسيب أثر حلو في يومك</div>
             </div>
-                        <div class=""><img src="image/main.jpg" alt="logo" style="width: 100%; max-width: 500px;"></div>
+                        <div id="aboutimg"><img src="image/main.jpg" alt="logo" style="width: 100%; max-width: 500px;"></div>
 
         </li>
 
         <li id="mnadel" class="product-section">
-            <h2>المناديل</h2>
+            <i id="topitem">مناديل</i>
             <div  class="media-gallery ">
-                <img  id="image" src="mnadel/1.jpg" alt="مناديل 1" onclick="openPopup(this.src)">
-                <img  id="image" src="mnadel/2.jpg" alt="مناديل 2" onclick="openPopup(this.src)">
+                <img  id="image" src="mnadel/1.jpg" style="animation-delay: 0s;" alt="مناديل 1" onclick="openPopup(this.src)">
+                <img  id="image" src="mnadel/2.jpg" style="animation-delay: 0s;" alt="مناديل 2" onclick="openPopup(this.src)">
                                             
             </div>
             <a href="mnadel.html" class="view-more-btn">عرض المزيد</a>
         </li>
 
         <li id="salobet" class="product-section">
-            <h2>سالوبتات</h2>
+            <i id="topitem">سالوبتات</i>
             <div class="media-gallery">
                 <img id="image" src="salobet/1.jpg" alt="سالوبت 1" onclick="openPopup(this.src)">
                 <img id="image" src="salobet/2.jpg" alt="سالوبت 2" onclick="openPopup(this.src)">
@@ -84,7 +86,7 @@
         </li>
 
         <li id="tarat" class="product-section">
-            <h2>طارات</h2>
+            <i id="topitem">طارات</i>
             <div class="media-gallery">
                 <img  id="image" src="tarat/1.jpg" alt="طارة 1" onclick="openPopup(this.src)">
                 <img  id="image" src="tarat/2.jpg" alt="طارة 2" onclick="openPopup(this.src)" >
@@ -93,7 +95,7 @@
         </li>
 
         <li id="swany" class="product-section">
-            <h2>صوانى</h2>
+            <i id="topitem">صوانى</i>
             <div  class="media-gallery">
                 <img  id="image" src="swany/1.jpg" alt="صينية 1"onclick="openPopup(this.src)">
                 <img id="image"  src="swany/2.jpg" alt="صينية 2"onclick="openPopup(this.src)">
@@ -102,7 +104,7 @@
         </li>
 
         <li id="farah" class="product-section">
-            <h2>باكدج الفرح</h2>
+            <i id="topitem">باكدج الفرح</i>
             <div class="media-gallery">
                 <img  id="image" src="farah/1.jpg" alt="فرح 1" onclick="openPopup(this.src)" >
                 <img  id="image" src="farah/2.jpg" alt="فرح 2" onclick="openPopup(this.src)" >
@@ -112,7 +114,7 @@
         </li>
 
         <li id="feedback" class="product-section">
-            <h2>feedback</h2>
+            <i id="topitem">feedback</i>
             <div  class="media-gallery">
                 <img id="image"  src="feedback/1.jpg" alt="feedback 1" onclick="openPopup(this.src)" >
                 <img id="image"  src="feedback/2.jpg" alt="feedback 2" onclick="openPopup(this.src)" >

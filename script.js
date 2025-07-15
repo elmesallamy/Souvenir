@@ -1,6 +1,4 @@
-﻿function toggleMenu() {
-    document.getElementById('items').classList.toggle('active');
-}
+﻿
 function toggleMenu() {
     const items = document.getElementById('items');
     items.classList.toggle('active');
@@ -51,5 +49,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
    
 });
-
 
