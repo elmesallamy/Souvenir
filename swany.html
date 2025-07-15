@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صواني - Souvenirs.0_0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+    
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            padding: 10px 20px;
+        }
+
+            header a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .media-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+            .media-gallery img {
+                max-width: 100%;
+                width: 300px;
+                border-radius: 8px;
+            }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            .back-link:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">⬅ الرجوع للصفحة الرئيسية</a>
+    </header>
+
+    <main class="product-section">
+        <h1>كل صور قسم الصواني</h1>
+        <div class="media-gallery">
+            <img id="image" src="swany/1.jpg" alt="صينية 1"onclick="openPopup(this.src)">
+            <img id="image" src="swany/2.jpg" alt="صينية 2"onclick="openPopup(this.src)">
+            <img id="image" src="swany/3.jpg" alt="صينية 3"onclick="openPopup(this.src)">
+            <img id="image" src="swany/4.jpg" alt="صينية 4"onclick="openPopup(this.src)">
+            <img id="image" src="swany/5.jpg" alt="صينية 5"onclick="openPopup(this.src)">
+            <img id="image" src="swany/6.jpg" alt="صينية 6"onclick="openPopup(this.src)">
+            <img id="image" src="swany/7.jpg" alt="صينية 7"onclick="openPopup(this.src)">
+
+        </div>
+        <a class="back-link" href="index.html">⬅ عودة للصفحة الرئيسية</a>
+    </main>
+    <div id="popup-container" onclick="closePopup()">
+        <span id="popup-close">&times;</span>
+        <div id="popup-image-container">
+            <img id="popup-image" src="" alt="صورة مكبرة">
+
+                <div class="popup-controls">
+                          
+                        <a id="popup-download" href="" download><i class="fa-solid fa-download" style="color: #9cbdd6;"></i></a>
+
+                 </div>        
+         </div>
+
+    </div>
+</body>
+</html>
