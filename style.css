@@ -396,10 +396,9 @@ ul#list {
      .media-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    margin-top: 40px;
+    gap: 10px;
+    justify-items: center; 
+    
     cursor: pointer ;
     transition: 1s all;
   }
@@ -407,7 +406,8 @@ ul#list {
     width: 100%;
     max-width: 160px;
     height: auto;
-   
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
