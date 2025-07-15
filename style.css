@@ -397,8 +397,7 @@ ul#list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     margin-top: 40px;
     cursor: pointer ;
@@ -408,7 +407,7 @@ ul#list {
     width: 100%;
     max-width: 160px;
     height: auto;
-    
+   
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
