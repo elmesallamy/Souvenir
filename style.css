@@ -398,7 +398,7 @@ ul#list {
     grid-template-columns: repeat(2, 1fr);
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     margin-top: 40px;
     cursor: pointer ;
