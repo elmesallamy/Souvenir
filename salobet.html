@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
-    
+    <link rel="icon" type="image/png" href="image/favicon.png">
     <script src="script.js"></script>
     <style>
         body {
@@ -52,42 +52,6 @@
             color: rgb(42, 57, 85);
             }
 
-            
-@media screen and (max-width: 768px){
-        .media-gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-
-            .media-gallery img,
-            .media-gallery video {
-                    width: 100%;
-                    max-width: 160px;
-                    height: auto;
-                    width: 250px;
-                    height: 250px;
-                    object-fit: cover;
-                    border-radius: 12px;
-                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                    transition: transform 0.3s ease;
-                    opacity: 0;
-                    animation: fadeZoom 3.0s ease forwards;
-            }
-            .media-gallery img:hover,
-            .media-gallery video :hover{
-                transform: scale(1.05); 
-                transition: .5s all;
-
-
-               }
-                @keyframes fadeZoom {
-                            to {
-                        opacity: 1;
-                        }
-                      }
-
-        }
         .back-link {
             
             display: block;
