@@ -2,6 +2,7 @@
 function toggleMenu() {
     const items = document.getElementById('items');
     items.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
 }
 
 // إخفاء القائمة عند الضغط على أي لينك داخلها
