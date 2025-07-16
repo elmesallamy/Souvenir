@@ -398,7 +398,6 @@ ul#list {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     justify-items: center; 
-    
     cursor: pointer ;
     transition: 1s all;
   }

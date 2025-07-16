@@ -22,6 +22,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
      <meta name="apple-mobile-web-app-title" content="Souvenirs">
      <link rel="apple-touch-icon" href="image/icon.png">
+     
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <script src="script.js" defer></script>
 </head>
@@ -30,7 +33,7 @@
 <script src="font/js/all.min.js
 "> </script>
 
-    <header>
+    <header data-aos="fade-down">
         <div id="head">
             <span id="topname" >
                <i>Souvenirs.0_0</i>
@@ -59,7 +62,7 @@
         
     </header>
 
-    <ul id="list">
+    <ul id="list" >
         <li id="about" class="" >
             <div id="main">
                 <div id="top"><i id="s">Sou</i>ven<i id="i">irs.0_0</i></div>
@@ -69,7 +72,7 @@
 
         </li>
 
-        <li id="mnadel" class="product-section">
+        <li id="mnadel" class="product-section"data-aos="zoom-in">
             <i id="topitem">المناديل والبصمه</i>
             <div  class="media-gallery ">
                 <img  id="image" src="mnadel/1.jpeg" style="animation-delay: 0s;" alt="مناديل 1" onclick="openPopup(this.src)">
@@ -81,7 +84,7 @@
             <a href="mnadel.html" class="view-more-btn">عرض المزيد</a>
         </li>
 
-        <li id="salobet" class="product-section">
+        <li id="salobet" class="product-section" data-aos="zoom-in">
             <i id="topitem">سالوبتات</i>
             <div class="media-gallery">
                 <img id="image" src="salobet/27.jpg" alt="سالوبت 1" onclick="openPopup(this.src)">
@@ -95,7 +98,7 @@
             <a href="salobet.html" class="view-more-btn">عرض المزيد</a>
         </li>
 
-        <li id="tarat" class="product-section">
+        <li id="tarat" class="product-section"data-aos="zoom-in">
             <i id="topitem">طارات</i>
             <div class="media-gallery">
                 <img  id="image" src="tarat/1.jpg" alt="طارة 1" onclick="openPopup(this.src)">
@@ -106,7 +109,7 @@
             <a href="tarat.html" class="view-more-btn">عرض المزيد</a>
         </li>
 
-        <li id="swany" class="product-section">
+        <li id="swany" class="product-section"data-aos="zoom-in">
             <i id="topitem">صوانى</i>
             <div  class="media-gallery">
                 <img  id="image" src="swany/1.jpg" alt="صينية 1"onclick="openPopup(this.src)">
@@ -117,7 +120,7 @@
             <a href="swany.html" class="view-more-btn">عرض المزيد</a>
         </li>
 
-        <li id="farah" class="product-section">
+        <li id="farah" class="product-section"data-aos="zoom-in">
             <i id="topitem">باكدج الفرح</i>
             <div class="media-gallery">
                 <img  id="image" src="farah/1.jpg" alt="فرح 1" onclick="openPopup(this.src)" >
@@ -129,7 +132,7 @@
             <a href="farah.html" class="view-more-btn">عرض المزيد</a>
         </li>
 
-        <li id="feedback" class="product-section">
+        <li id="feedback" class="product-section"data-aos="zoom-in">
             <i id="topitem"> اراء العملاء</i>
             <div  class="media-gallery">
                 <img id="image"  src="feedback/1.jpg" alt="feedback 1" onclick="openPopup(this.src)" >
@@ -154,6 +157,13 @@
          </div>
 
     </div>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // مدة الحركة
+    offset: 100,   // يبدأ من مسافة قد إيه من الشاشة
+    once: true
+  });
+</script>
 </body>
 </html>
