@@ -99,6 +99,9 @@ nav {
     gap: 20px;
     font-size: large;
 }
+#items::-webkit-scrollbar {
+    display: none; 
+  }
 
     #items li a {
         text-decoration: none;
@@ -344,6 +347,9 @@ ul#list {
     body.menu-open {
   overflow: hidden;
 }
+#items::-webkit-scrollbar {
+    display: none; 
+  }
 
 
         #items.active {
