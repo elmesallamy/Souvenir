@@ -406,11 +406,13 @@ ul#list {
     #head {
         padding: 10px;
         flex-direction: column;
+         height: auto;
     }
 
     nav {
         flex-direction: column;
         padding: 10px;
+        
     }
 
     #main {
