@@ -350,7 +350,7 @@ ul#list {
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: block;
-        font-size: 30px;
+        
         top: 12px;
         position: fixed; 
         transform: none;
@@ -359,15 +359,17 @@ ul#list {
         color: white;
         z-index: 10000;
         cursor: pointer;
+       
     }
 
 
     #items {
+        
         display: flex; 
         flex-direction: column;
         position: fixed;
         top: 0;
-        right: -250px; 
+        right: -250px;
         width: 150px; 
         height: 100vh; 
         background-color: rgb(42, 57, 85);
@@ -387,20 +389,24 @@ ul#list {
   }
 
 
-        #items.active {
-            display: flex;
-            right: 0;
-
-        }
-
-        #items li {
-            text-align: center;
-            margin: 10px 0;
-        }
+             #items.active {
+                 display: flex;
+                 right: 0;
+     
+             }
+     
+             #items li {
+                text-align: center;
+                margin: 10px 0;
+               
+             }
 
             #items li a {
-                font-size: 20px;
-                padding: 12px 0;
+               font-size: 20px;
+               padding-right: 35px;
+               display: block;            
+               width: 100%;               
+               text-align: center;
             }
 
     #head {
