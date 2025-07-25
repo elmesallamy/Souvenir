@@ -467,7 +467,7 @@ ul#list {
      .media-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 500px;
+    gap: 2px;
     justify-items: center; 
     justify-content: center;
     cursor: pointer ;
