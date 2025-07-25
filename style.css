@@ -227,7 +227,6 @@ ul#list {
 }
 
 
-
 #main {
     font-size: 50pt;
     font-weight: 700;
@@ -361,6 +360,15 @@ ul#list {
         cursor: pointer;
        
     }
+    
+#topname{
+
+    font-size: large;
+}
+.social-icon {
+
+    font-size: 10px;
+}
 
 
     #items {

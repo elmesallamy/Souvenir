@@ -2,7 +2,6 @@
 function toggleMenu() {
     const items = document.getElementById('items');
     items.classList.toggle('active');
-    document.body.classList.toggle('menu-open');
 }
 
 // إخفاء القائمة عند الضغط على أي لينك داخلها
@@ -41,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("popup-download").href = src;
         document.getElementById("popup-container").style.display = "flex";
         currentZoom = 1;
-        popupImage.style.transform = `scale(${currentZoom})`;
+        
     };
 
     window.closePopup = function () {
@@ -51,8 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
    
 });
 
- src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-  AOS.init();
+
 
 
 
