@@ -51,7 +51,7 @@ header {
 #topname {
     font-size: 35px;
     font-style: italic;
-    margin-right: 25px;
+    margin-right: 5px;
     font-weight: 1000;
     text-decoration: none;
     text-shadow: 0 0 3px #fdf6f6, 0 0 8px #000000;
@@ -87,6 +87,7 @@ header {
   align-items: center;
   gap: 15px;
   margin-left: 10px;
+  
   animation: slideIn 2s ease;
 }
 .social-icon {
@@ -364,10 +365,18 @@ ul#list {
 #topname{
 
     font-size: 30px;
+   
 }
+#social{
+
+    padding-right: 30px;
+}
+
 .social-icon {
 
     font-size: 10px;
+    
+
 }
 
 
