@@ -43,18 +43,17 @@ header {
 #topitem{
     font-size: xx-large;
     font-style: italic;
-    
     font-weight: 1000;
     text-shadow: 0 0 .5px #fdf6f6, 0 0 2px #000000;
     color: rgb(42, 57, 85);
 }
 #topname {
-    font-size: 35px;
+    font-size: 3rem;
     font-style: italic;
     margin-right: 5px;
     font-weight: 1000;
     text-decoration: none;
-    text-shadow: 0 0 3px #fdf6f6, 0 0 8px #000000;
+    text-shadow: 0 0 3px #fdf6f6, 0 0 10px #000000;
     color: rgba(150, 210, 210, 0.918);
     animation: topname 7s infinite alternate-reverse, floatIcon 2.5s ease-in-out infinite;
 
@@ -91,13 +90,18 @@ header {
   animation: slideIn 2s ease;
 }
 .social-icon {
-  animation: floatIcon 2.5s ease-in-out infinite;
+  
   font-size: 20px;
-  transition: transform 0.3s ease;
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
 }
 
 .social-icon:hover {
-  transform: scale(1.2);
+ color: #fff;
+  transform: rotateY(360deg);
+  
 }
 
 @keyframes floatIcon {
@@ -144,7 +148,7 @@ nav {
         font-weight: bold;
         padding: 8px 12px;
         border-radius: 6px;
-        transition: background 0.3s;
+        transition: top 0.3s;
     }
 
         #items li a:hover {
@@ -356,8 +360,7 @@ ul#list {
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: block;
-        
-        top: 12px;
+        top: 15px;
         position: fixed; 
         transform: none;
         background: none;
@@ -370,40 +373,43 @@ ul#list {
     
 #topname{
 
-    font-size: 30px;
+    font-size: 2.5rem ;
    
 }
-#social{
-
-    padding-right: 20px;
+#social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 10px;
+  animation: slideIn 2s ease;
 }
-
 .social-icon {
-
-    font-size: 10px;
-    
-
+  animation: floatIcon 2.5s ease-in-out infinite;
+  font-size: 15px;
+  transition: transform 0.3s ease;
 }
 
+.social-icon:hover {
+  transform: scale(1.2);
+  
+}
 
     #items {
         
         display: flex; 
         flex-direction: column;
         position: fixed;
-        top: 0;
-        right: -250px;
-        width: 150px; 
-        height: 100vh; 
+        top: 130px;
+        right: -4100px;
+        width: 100%;
+        height: 65vh; 
         background-color: rgb(42, 57, 85);
-        
-        padding-top: 60px;
+        padding-top:15px;
         box-shadow: -2px 0 5px rgba(0,0,0,0.3);
-        transition: right 0.3s ease;
         z-index: 9999;
-          overflow-y: auto;
-         max-height: 100vh; 
-         transition: right 0.3s ease;
+        overflow-y: auto;
+        max-height: 100vh; 
+        transition: right 0.3s ease;
     }
     body.menu-open {
   overflow: hidden;
@@ -431,7 +437,7 @@ ul#list {
                display: block;            
                width: 100%;               
                text-align: center;
-               border-bottom: 1px solid #ccc;
+               
             }
 
     #head {
